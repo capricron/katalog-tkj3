@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Roboto Medium Italic";
+  src: url('font/Roboto/Roboto-MediumItalic.ttf');
+}
+
+
+/* preloader */
+body{
+  position: relative;
+}
+
+#preloader{
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.orang{
+  opacity: 0;
+  transition: 3s;
+  width: 85vw;
+  margin-top: 0px;
+  transform:translate(0px,100px);
+}
+
+.text{
+  transition: 8s;
+  opacity: 0;
+}
+
+.muncultext{
+  color: white;
+  opacity: 1;
+}
+
+.mulai{
+  font-size: 50px;
+  color: white;
+  border: none;
+  background:  none;
+  width: 200px;
+  margin-top: 50px;
+  transition: 8s;
+  opacity: -5;
+}
+
+.topi{
+  margin-top: 20px;
+  opacity: 0;
+  transition: 3s;
+  transform:translate(0px,-100px);
+  width: 50vw;
+}
+
+.muncul{
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.tombol{
+  opacity: 1;
+}
+
+.kedua{
+  padding-top: 200px;
+}
+
+.gambar-logo img{
+  padding-top: 125px ;
+  width: 250px;
+}
+
+/* .ketiga{
+  left: 35%;
+} */
+
+
+.kedua{
+  margin-left: 380px;
+  width: 50%;
+}
+
+.typed {
+ font-size: 30px;
+}
+
+.typed-cursor{
+   opacity: 1;
+   font-size: 30px;
+   animation: blink 0.7s infinite;
+}
+
+.ketiga img, .keempat img{
+  width: 250px;
+ margin-left: 50px;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.kelima{
+  font-family: "Roboto Medium Italic";
+  color: #ff4654;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(img/Opening\ loading-01.jpg);
+}
+
+.container{
+  position: relative !important;
+}
+
+.Loading {
+  top: 100%;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.Loading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  animation: load 8s ;
+  animation-fill-mode: forwards;
+}
+
+.down{
+  width: 100%;
+  position: absolute;
+  top: 500px;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+    background: #ff4654;
+  }
+  
+  50% {
+    width: 70%;
+    background: #ff4654;
+  }
+  
+  75% {
+    width: 90%;
+    background: #ff4654;
+  }
+
+  
+  100% {
+    width: 100%;
+    background: #ff4654;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: #a28089;
+  }
+  
+  25% {
+    background: #a0d2eb;
+  }
+  
+  50% {
+    background: #ffa8b6;
+  }
+  
+  75% {
+    background: #d0bdf4;
+  }
+  
+  100% {
+    background: #494d5f;
+  }
+}
+
+@media (max-width:1000px) {
+
+  #preloader{
+    height: 100vh;
+  }
+
+  .topi{
+    margin-top: 25%;
+    width: 75%;
+  }
+
+  .mulai{
+    font-size: 25px;
+    color: white;
+    border: none;
+    background:  none;
+    width: 100px;
+    margin-top: 100px;
+  }
+
+  .ketiga h1{
+    font-size: 45px;
+  }
+
+  .kedua{
+    margin-top: -140px;
+    margin-left: 30px;
+    width: 80%;
+  }
+
+  .ketiga img, .keempat img{
+    width: 180px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .down{
+    width: 95%;
+    position: absolute;
+    top: 500px;
+  }
+  
+
+}

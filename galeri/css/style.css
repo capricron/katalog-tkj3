@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Agency Fb Bold";
+  src: url('../../font/AgencyFBBold.ttf');
+}
+
+body{
+  font-family: "Agency Fb Bold";
+}
+
+nav{
+  background-color: black !important;
+}
+
+.brand-logo img{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 30px !important;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.scroll{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+a, a:hover{
+  color: white !important;
+  text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fixed{
+    z-index: 999;
+    top: 0;
+    position: sticky;
+}
+
+#galeri{
+    overflow: hidden;
+    z-index: -1 !important;
+}
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer{
+    display: block;
+  }
+  
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:1000px) {
+  #home{
+    height: 100px;
+  }
+  .material-icons{
+    margin-top: 15px !important;
+    font-size: 70px !important;
+  }
+
+  .brand-logo img{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 60px !important;
+    height: 60px;
+    margin-top: 20px;
+  }
+
+  
+}

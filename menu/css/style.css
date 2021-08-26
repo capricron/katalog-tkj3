@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Agency Fb Bold";
+    src: url('../../font/AgencyFBBold.ttf');
+  }
+  
+  body{
+    font-family: "Agency Fb Bold";
+  }
+
+nav{
+    background-color: black !important;
+  }
+
+
+.brand-logo img{
+margin-left: 20px;
+margin-bottom: 10px;
+width: 30px;
+height: 40px;
+}
+  
+  .scroll{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+  a, a:hover{
+    color: white !important;
+    text-decoration: none;
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.choose{
+    color: white;
+}
+
+.fixed{
+    z-index: 999;
+    top: 0;
+    position: sticky;
+}
+
+#menu{
+    margin-top: 50px;
+}
+
+.peserta{
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.peserta img{
+    width: 200px !important;
+    height: 300px !important;
+}
+
+.container-menu{
+    margin-left: 80px;
+}
+
+.tulisan{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-decoration: none;
+    /* top: 0;
+    left: 80px; */
+    opacity: 0;
+    transition: .5s;
+}
+
+.tulisan{
+    -webkit-text-stroke:1px black;
+}
+
+.muncul{
+    position: absolute;
+    top: 0;
+    left: 28%;
+    opacity: 1;
+    font-size: 50px;
+}
+
+
+.link{
+    position: relative;
+}
+
+@media(max-width:1000px){
+    body{
+        background-image: url(../hp.jpg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .scroll{
+        color: black !important;
+    }
+
+    .link img{
+        width: 120px !important;
+        height: 220px !important;
+    }
+
+    .peserta{
+        margin-left: 10px;
+        margin-right: 50px;
+        width: 110px;
+    }
+
+    .tulisan{
+        position: absolute;
+        top: 0;
+        left: 1px;
+        opacity: 0;
+        transition: .5s;
+        text-align: center;
+    }
+    
+    .muncul{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        text-align: center;
+        opacity: 1;
+        font-size: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-stroke: 1px red;
+        -webkit-text-fill-color:yellow;
+    }
+
+    #menu{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    
+    .container-menu{
+        margin-left: 0px;
+    }
+
+    .navbar{
+        width: 100% !important;
+    }
+}

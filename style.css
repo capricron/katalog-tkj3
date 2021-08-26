@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Agency Fb Bold";
+  src: url('font/AgencyFBBold.ttf');
+}
+
+body{
+  font-family: "Agency Fb Bold";
+}
+
+.sidenav li a{
+  color: black !important;
+}
+
+.scroll{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+
+.logo img {
+  width: 150px;
+}
+
+a, a:hover{
+  color: white !important;
+  text-decoration: none;
+}
+
+nav{
+  background-color: black !important;
+}
+
+#navbar{
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.brand-logo img{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 30px;
+}
+
+.text{
+  margin-top: 50px;
+}
+
+.text h1{
+  font-size: 150px !important;
+  -webkit-text-stroke: 1px black;
+  color: white !important;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.p{
+  font-size: 50px;
+  font-family: cursive;
+  margin-top: -20px;
+  -webkit-text-stroke: 1px black;
+  font-family: 'Bebas Neue', cursive;
+  color: white !important;
+}
+
+.banner{
+  background-image:  url(img/banner.png); 
+  background-size: 100% 100%;;
+  height: 650px;
+  width: 100%;
+}
+
+
+.banner img{
+  background-color: rgba(0, 0, 0, .5);
+  margin-top: 15%;
+  width: 500px;
+}
+
+.wali{
+  position: absolute;
+  z-index: -1;
+  margin-top: -70px;
+  background-image: url(img/Bio\ Wali-01.jpg);
+  background-size: cover;
+  height: 1200px;
+  width: 100%;
+}
+
+.wali-judul{
+  font-size: 75px;
+  margin-top: 100px;
+}
+
+.row{
+  margin-top: 125px;
+}
+
+.foto img{
+  border-radius: 10%;
+  width: 350px;
+}
+
+.desk h1{
+  font-size: 50px;
+}
+
+.desk a,.desk a:hover{
+  color: black !important;
+}
+
+.sambutan p{
+  color: black;
+  font-size: 25px;
+}
+
+.menu{
+  position: relative;
+  margin-top: 1130px;
+}
+
+.biodata{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-color: red;
+}
+
+.biodata h1{
+  color: #ece8e1;
+  transition: 3s;
+  position: absolute;
+  right: 10px;
+  bottom: -45px;
+  text-align: right !important;
+  font-size: 100px !important;
+}
+
+.galeri{
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 150px;
+  background-color: #ece8e1;
+}
+
+.galeri h1{
+  font-size: 100px !important;
+  color: #18212a;
+  transition: 2s;
+  position: absolute;
+  left: 10px;
+  bottom: -45px;
+}
+
+.video{
+  margin-top: 1400px;
+  width: 100%;
+  height: 1000px;
+  background-image: url(img/Vid-01.jpg);
+}
+
+iframe{
+  margin: 250px auto;
+}
+
+.foot-logo img{
+  width: 100px;
+}
+
+@media (max-width:1000px) {
+  .banner{
+    height: 250px;
+  }
+
+  .banner img{
+    margin-top: 80px;
+    width: 200px;
+  }
+
+  .wali,.desk a,.desk a:hover, .sambutan p{
+    color: black  !important;
+    -webkit-text-stroke: .5px #ed7647  !important;
+  }
+
+  .wali{
+    background-image: url(img/wali-hp.jpg);
+    background-size: 100% 1005;
+    height: 2000px;
+  }
+  
+  .menu{
+    position: relative;
+    margin-top: 1900px;
+  }
+
+  .wali-judul{
+    margin-top: 100px;
+    margin-bottom: -70px;
+    font-size: 50px;
+  }
+
+  .foto img{
+    width: 300px;
+  }
+
+  .desk h1{
+    font-size: 35px;
+  }
+
+  .video{
+    margin-top: 2200px;
+    width: 100%;
+    height: 800px;
+    background-image: url(img/Vid-01.jpg);
+  }
+
+  iframe{
+    height: 200px;
+    width: 300px;
+  }
+}

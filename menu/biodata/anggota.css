@@ -1,0 +1,309 @@
+/* ngatur setiap orang */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.b19, .b35{
+    background: url(img/404.png); 
+
+  /* Full height */
+  height: 100%;
+    width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    opacity: 0;
+}
+
+/* yusuf */
+.g1{
+    width: 180px;
+    margin-top: 50px;
+}
+
+/* aldika */
+.g2{
+    width:150px;
+    margin-top: 60px;
+}
+
+/* alpin */
+.g3{
+    width: 170px;
+    margin-top: 80px;
+}
+
+/* fajar */
+.g4{
+    width: 300px;
+    margin-top: 50px;
+    position: absolute;
+    right: 200px;
+}
+
+/* asthon */
+.g5{
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* cikal */
+.g6{
+    width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    right: 200px;
+}
+
+/* dafa */
+.g7{
+    width: 320px;
+    margin-top: 50px;
+    position: absolute;
+    right: 200px;
+}
+
+/* dewa */
+.g8{
+    width: 230px;
+    margin-top: 30px;
+}
+
+/* elisa */
+.g9{
+    width: 250px;
+    margin-top: 30px;
+}
+
+/* elsa */
+.g10{
+    width: 320px;
+    margin-top: 50px;    
+    position: absolute;
+
+}
+
+/* ferza */
+.g12{
+    width: 220px;
+    margin-top: 50px;
+}
+
+/* umar */
+.g13{
+    width: 160px;
+    margin-top: 50px;
+}
+
+/* joni */
+.g14{
+    margin-top: 20px;
+    position: absolute;
+    right: 200px;
+}
+
+/* udin gendot */
+.g15,.g16{
+    width: 370px;
+    margin-top: 80px;
+    position: absolute;
+    right: 200px;
+}
+
+/* helsa */
+.g17{
+    width: 250px;
+    margin-top: 50px;
+}
+
+/* nopita */
+.g18{
+    width: 200px;
+    margin-top: 50px;
+}
+
+/* arya */
+.g20{
+    width: 300px;
+    margin-top: 50px;
+}
+
+/* meli budi */
+.g21 ,.g22 {
+    margin-top: 50px;
+    width: 230px;
+}
+
+/* cubai */
+.g23{
+    width: 170px;
+    margin-top: 50px;
+}
+
+/* ayah */
+.g24{
+    width: 250px;
+    margin-top: 50px;
+}
+
+/* cacing */
+.g25{
+    margin-top: 30px;
+    width: 200px;
+}
+
+/* natasya */
+.g26{
+    width: 170px;
+    margin-top: 50px;
+}
+/* husni */
+.g27,.g28{
+    width: 300px;
+    margin-top: 50px;
+}
+
+/* rangga */
+.g29{
+    width: 170px;
+    margin-top: 50px;
+}
+
+/* andra */
+.g30{
+    width: 150px;
+    margin-top: 50px;
+}
+
+/* ando */
+.g31{
+    width: 350px;
+    margin-top: 50px;
+    position: absolute;
+    right: 200px;
+}
+
+/* roshan */
+.g32{
+    width: 180px;
+    margin-top: 50px;
+}
+
+/* asep */
+.g33{
+    width: 420px;
+    margin-right: 200px;
+    position: absolute;
+    right: 100px;
+    margin-top: 80px;
+}
+
+
+/* bowok */
+.g34{
+    width: 220px;
+    margin-top: 50px;
+    
+}
+
+/* aku lah siapa lagi */
+.g36{
+    width: 400px;
+    margin-top: 80px;
+    position: absolute;
+    right: 200px;
+}
+
+
+/* untuk hp setinggan hp kontol maraki gedek */
+
+@media (max-width:1000px) {
+    .g4 {
+        position: unset;
+        width: 300px;
+        margin-left: -10px;
+    }
+
+    .g14{
+        margin-left: 30px !important;
+        width: 300px !important;
+    }
+
+    .g5{
+        margin-left: 50px;
+    }
+
+    .g6{
+        position: unset;
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .g7,.g10,.g15,.g16{
+        position: unset;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .g9{
+        margin-left: 10px;
+    }
+
+    .g14{
+        position: unset;
+        width: 350px;
+        margin-left: -30px;
+    }
+
+    .g20{
+        margin-left: 10px !important;
+    }
+
+    .g20,.g31,.g36,.g33{
+        width: 300px;
+        position: unset;
+        margin-left: -20px;
+    }
+
+    .g27,.g28{
+        margin-left: 10px;
+    }
+
+    .g30{
+        margin-left: 80px;
+    }
+
+    .g33{
+        width: 300px !important;
+        margin-top:40px;
+        margin-left: 20px !important;
+    }
+
+    .g34{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    .g36{
+        width: 300px !important;
+        margin-top:40px;
+        margin-left: 0px !important;
+    }
+
+    .b19, .b35{
+        background: url(img/404\ playerhas\ gone\ Mobile.png); 
+        height: 100%;
+        width: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+
+      background-size: cover;
+        opacity: 0;
+        background-position-y: 10px;
+        background-position-x: -100px;
+        opacity: 0;
+    }
+
+}

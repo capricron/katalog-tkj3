@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog TKJ 3</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav id="home">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo"><img src="../img/logo.png" alt="" srcset=""></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="scroll">Home</a></li>
+          <li><a href="../menu/" class="scroll">Biodata</a></li>
+          <li><a href="../galeri/" class="scroll">Galeri</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/" class="scroll">Home</a></li>
+    <li><a href="/menu/" class="scroll">Biodata</a></li>
+    <li><a href="/galeri/" class="scroll">Galeri</a></li>
+  </ul>
+
+    <div id="menu">
+        <div class=" container-menu">
+          <div class="row">
+            <div  class="mobile">
+            </div>
+            <div class="col-lg-9 col-md-12  col-gambar">
+              <div class="row">
+                <div v-for="x in 36" class="col-lg-3 col-sm-6 peserta">
+                  <a :href="url(x)"  class="link">
+                    <img :src="gambar(x)" class="foto">
+                    <p class="tulisan" v-text="name(x)"></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div  class="desktop">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script>
+      const side = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(side);
+    </script>
+    <script src="script/menu.js"></script>
+</html>

@@ -1,0 +1,184 @@
+html{
+    position: relative;
+}
+
+body{
+    margin-bottom: 100px;
+}
+
+.navbar{
+    transition: 3s;
+    z-index: 100;
+    opacity: 0;
+}
+
+.navbar:hover{
+    animation: header 1s ease;
+}
+
+.jumbotron{
+    height: 400px;
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -20px ;
+    background-size: cover;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.jumbotron img{
+    width: 200px;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+.jumbotron h1, .jumbotron p{
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+.foto {
+    width:200px;
+    border: 5px solid #666;
+}
+
+hr{
+    width: 250px;
+    border-top:3px solid #999;
+}
+
+section{
+    min-height: 500px;
+}
+
+.kiri, .kanan{
+    opacity: 0;
+    transition: 2s;
+}
+
+.kiri{
+    transform: translate(-50px,0);
+}
+
+.kanan{
+    transform: translate(50px,0);
+}
+
+.kiri.pm, .kanan.pm{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portofolio{
+    top: 0;
+    background-color: #eee;
+}
+
+.portofolio .thumbnail{
+    opacity: 0;
+    transition: .5s;
+    transform: translate(0, -40px);
+}
+
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.overlay{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9999;
+    transition: .5s;
+    text-align: center;
+    padding-top:35px;
+}
+
+#ilang{
+    display: none;
+}
+
+.col-sm-3 img#g{
+    width: max-content;
+    height: max-content;
+    border-radius: 0%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.8);
+}
+
+.thumbnail{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.demo-galery{
+    margin-left: -20px;
+}
+
+@keyframes zoomfade {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color:#333;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+footer i{
+    color: pink;
+}
+
+/* animasi header */
+@keyframes header{
+    0%{
+        opacity: 0;
+        height: 0px;
+    }
+
+    50%{
+        height: 40px;
+        opacity: .5;
+    }
+    
+    100%{
+        opacity: 1;
+        height: 80px;
+        animation-play-state: paused;
+    }
+}

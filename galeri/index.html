@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Katalog TKJ 3</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav id="home">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><img src="../img/logo.png" alt="" srcset=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/" class="scroll">Home</a></li>
+            <li><a href="/menu/" class="scroll">Biodata</a></li>
+            <li><a href="/galeri/" class="scroll">Galeri</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/" class="scroll">Home</a></li>
+      <li><a href="/menu/" class="scroll">Biodata</a></li>
+      <li><a href="/galeri/" class="scroll">Galeri</a></li>
+    </ul>
+
+    <!-- ////////////////////////////////////////// -->
+    <script>
+     if( confirm('Menu galeri membutuhkan source yang besar mungkin akan membutuhkan waktu loading yang sangat lama\nApakah anda yakin untuk melanjutkan?')){
+       
+     }else{window.location = '/'}
+
+    </script>
+    <!-- //////////// -->
+
+    <div class="container" id="galeri">
+      <div class="row lol" >
+        <div class="row">
+          <div v-for="x in 192" class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" target="_blank" :href="galeri(x)">
+                  <img class="img-thumbnail"
+                      :src="thumb(x)"
+                      alt="Another alt text">
+              </a>
+          </div>
+        </div>
+
+      <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="image-gallery-title"></h4>
+                      <button type="button" class="close" data-dismiss="modal"><span>X</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                      </button>
+
+                      <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video d-flex justify-content-center">
+    <iframe width="700" height="450" src="https://www.youtube.com/embed/G7oIDFYXtxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+  </div>
+
+  <!--  -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script>
+      const side = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(side);
+    </script>
+    <script src="script/vanila.js"></script>
+    <script src="script/vue.js"></script>
+  </body>
+</html>

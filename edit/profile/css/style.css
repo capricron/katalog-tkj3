@@ -1,0 +1,78 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url(../../bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.gambar img{
+    width: 300px;
+}
+
+.form{
+    margin-top: 10%;
+}
+
+td{
+    color: white;
+    font-size: 25px;
+    width: 300px;
+}
+
+input{
+    width: 400px;
+}
+
+.foto{
+    border: 1px solid gold;
+}
+
+button{
+    text-align: right;
+}
+
+p{
+    margin-top: 20px;
+}
+
+a{
+    font-size: 20px;
+}
+
+.wm a,p{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    color: white;
+    border:1px solid white;
+    background: none;
+}
+
+.easter{
+    position: absolute;
+    color: white;
+    right: 0 !important;
+    /* width: 10000px; */
+  
+}
+
+
+@media (max-width:1000px) {
+    .fotos{
+        margin-top: 300px;
+        margin-left: 200px;
+    }
+
+    /* a,p,button{
+        font-size: 30px;
+    } */
+
+}
